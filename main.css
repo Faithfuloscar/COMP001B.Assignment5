@@ -20,6 +20,11 @@ a:focus, a:hover {
 body {
 	font-family: 'Noto Serif', serif;
 	font-size: 18px;
+	display: grid;
+	grid-template-rows: 50px auto 50px;
+	grid-template-columns: 1fr;
+	height: 100vh;
+	margin: 0;
 }
 
 h1, h2 {
