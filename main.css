@@ -20,11 +20,7 @@ a:focus, a:hover {
 body {
 	font-family: 'Noto Serif', serif;
 	font-size: 18px;
-	display: grid;
-	grid-template-rows: 50px auto 50px;
-	grid-template-columns: 1fr;
-	height: 100vh;
-	margin: 0;
+
 }
 
 h1, h2 {
@@ -36,6 +32,7 @@ h1, h2 {
 
 h1 {
 	font-size: 3rem;
+	margin: 0;
 }
 
 h2 {
@@ -43,11 +40,11 @@ h2 {
 }
 
 header {
-	text-align: center;
+	margin: 0;
 }
 
 main {
-
+	padding: 1rem;
 }
 
 p {
@@ -64,13 +61,36 @@ p {
 }
 
 #footer-container {
-	
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
 }
 
 #header-container {
-
+	text-align: center;
+	padding: 1rem;
+	width: 100%;
 }
 
 #main-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	padding: 1rem;
+}
 
+/* creates the desired effect of three columns only on screens larger than 768px */
+@media (min-width: 768px){
+	#main-container{
+		grid-template-columns: 1fr 2fr 1fr;
+		gap: 1rem;
+	}
+}
+
+footer{
+	margin: 0;
+}
+
+nav, aside{
+	padding: 1rem;
 }
