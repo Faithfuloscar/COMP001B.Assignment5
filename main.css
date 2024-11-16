@@ -5,92 +5,108 @@
 	font-family: 'Noto Serif', serif;
 */
 
+/* styles regular and visited link*/
 a:link, a:visited {
-	color: blue;
+	color: blue; /*links color is blue*/
 }
 
+/* styles links when focused or hovered*/
 a:focus, a:hover {
-	background-color: #ddddff;
-	border-radius: 5px;
-	text-decoration: underline;
-	transition-duration: 0.2s;
-	transition-property: background;
+	background-color: #ddddff; /* light blue background color for when focused/hoovered */
+	border-radius: 5px; /* adds rounded corners to background */
+	text-decoration: underline; /* underlines text */
+	transition-duration: 0.2s; /* smooth transition effect for background */
+	transition-property: background; /* only animates the background color */
 }
 
+/* styles the body */
 body {
-	font-family: 'Noto Serif', serif;
-	font-size: 18px;
+	font-family: 'Noto Serif', serif;  /* Uses 'Noto Serif' for text */
+	font-size: 18px; /* default text size */
 
 }
 
+/* styles h1 and h2 */
 h1, h2 {
-	font-family: 'Roboto Condensed', sans-serif;
-	letter-spacing: .05em;
-	margin: 1.5rem auto;
-	text-align: center;	
+	font-family: 'Roboto Condensed', sans-serif; /* uses 'Roboto Condensed' for font */
+	letter-spacing: .05em; /* adds spacing between letters for readability */
+	margin: 1.5rem auto; /* adds vertical spacing and center-aligns the margins */
+	text-align: center;	/* center-align the text */
 }
 
+/* styles specifics for h1 */
 h1 {
-	font-size: 3rem;
-	margin: 0;
+	font-size: 3rem; /* sets the font to large size */
+	margin: 0; /* removes default margins for accurate spacing */
 }
 
+/*  styles specific for h2 */
 h2 {
-	font-size: 2.25rem;
+	font-size: 2.25rem; /* sets a slightly smaller font than h1 */
 }
 
+/* styles the header */
 header {
-	margin: 0;
+	margin: 0; /* removes default margins */
 }
 
+/* styles the main */
 main {
-	padding: 1rem;
+	padding: 1rem; /* adds padding inside the container */
 }
 
+/* styles paragraphs */
 p {
-	line-height: 140%;
-	margin-bottom: 1em;
+	line-height: 140%; /* sets line height */
+	margin-bottom: 1em; /* adds space after each paragraph */
 }
 
+/* adjusts the intro section */
 #intro {
-	font-size: 22px;
+	font-size: 22px; /* sets the font size to a larger font */
 }
 
+/* adjusts sections automotive, maritime, medical, physics, and myths */
 #automotive, #maritime, #medical, #physics, #myths {
- font-size: 15px;
+ font-size: 15px; /* adjusts the font size to be smaller */
 }
 
+/* styles footer-container section */
 #footer-container {
-	text-align: center;
-	padding: 1rem;
-	width: 100%;
+	text-align: center; /* center-align text inside the header */
+	padding: 1rem; /* adds padding around the content */
+	width: 100%; /* sets the width to span the full page */
 }
 
+/* styles header-container section */
 #header-container {
-	text-align: center;
-	padding: 1rem;
-	width: 100%;
+	text-align: center; /* center aligns text */
+	padding: 1rem; /* adds padding around the content */
+	width: 100%; /* makes the header span the width of the page */
 }
 
+/*  styles the main-container section */
 #main-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1rem;
-	padding: 1rem;
+	display: grid; /* creates CSS grid layout */
+	grid-template-columns: 1fr; /* Sets one column for all screen sizes */
+	gap: 1rem; /* adds a gap between items */
+	padding: 1rem; /* adds padding inside the container */
 }
 
 /* creates the desired effect of three columns only on screens larger than 768px */
 @media (min-width: 768px){
 	#main-container{
-		grid-template-columns: 1fr 2fr 1fr;
-		gap: 1rem;
+		grid-template-columns: 1fr 2fr 1fr; /* creates a 3-column layout */
+		gap: 1rem; /* Maintain the gap between grid items */
 	}
 }
 
+/* styles the footer */
 footer{
-	margin: 0;
+	margin: 0; /* removes default margins */
 }
 
+/* styles nav and aside */
 nav, aside{
-	padding: 1rem;
+	padding: 1rem; /* adds padding inside elements */
 }
